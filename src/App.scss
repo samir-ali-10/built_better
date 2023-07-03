@@ -1,0 +1,115 @@
+@import "./sass/helpers/variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+.navbar_container {
+    max-width: 95%;
+    margin: auto;
+
+    .navbar {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+
+            li {
+                margin-right: 20px;
+
+                a {
+                    text-transform: uppercase;
+                    color: black;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+
+            a {
+                color: $secondary-color;
+                font-size: 1.2rem;
+                margin-right: 40px;
+            }
+
+            .log {
+                display: flex;
+                align-items: center;
+                font-size: 1.2rem;
+
+                a {
+                    color: black;
+                    text-transform: uppercase;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+.landing_page {
+    background-image: url("./images/banner-bg.png");
+
+
+}
+
+
+@media (max-width: 1099px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .landing_page {
+        .navbar {
+            ul {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 550px) {
+    :root {
+        font-size: 10px;
+    }
+
+    .landing_page {
+        .navbar {
+            .info {
+                flex-direction: column;
+            }
+        }
+    }
+}
