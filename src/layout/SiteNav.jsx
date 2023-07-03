@@ -2,17 +2,17 @@ import { Link } from 'react-router-dom'
 import navbarLogo from "../images/logo.png"
 
 export default function SiteNav() {
-    var navBar = document.querySelector(".navbar");
+    // var navBar = document.querySelector(".navbar");
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
-            navBar.classList.add("sticky");
-        } else {
-            navBar.classList.remove("sticky");
-        }
-    }
+    // function scrollFunction() {
+    //     if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+    //         navBar.classList.add("sticky");
+    //     } else {
+    //         navBar.classList.remove("sticky");
+    //     }
+    // }
 
-    window.onscroll = function () { scrollFunction() };
+    // window.onscroll = function () { scrollFunction() };
     return (
         <div className="navbar_container">
 
@@ -25,16 +25,16 @@ export default function SiteNav() {
                         <Link to="/">home</Link>
                     </li>
                     <li>
-                        <Link to="">services</Link>
+                        <Link to="/services">services</Link>
                     </li>
                     <li>
-                        <Link to="">about</Link>
+                        <Link to="/about">about</Link>
                     </li>
                     <li>
-                        <Link to="">shop</Link>
+                        <Link to="/shop">shop</Link>
                     </li>
                     <li>
-                        <Link to="">contact</Link>
+                        <Link to="/contact">contact</Link>
                     </li>
                 </ul>
                 <i class="fa-solid fa-bars"></i>
