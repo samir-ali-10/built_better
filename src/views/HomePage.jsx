@@ -5,13 +5,9 @@ export default function HomePage() {
     return (
         <>
             <div className='landing_page'>
-                I am homepage
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto magnam et vel nulla eveniet, nihil maxime optio assumenda nobis quibusdam reprehenderit sapiente magni iusto ducimus dolores vero animi temporibus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto magnam et vel nulla eveniet, nihil maxime optio assumenda nobis quibusdam reprehenderit sapiente magni iusto ducimus dolores vero animi temporibus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto magnam et vel nulla eveniet, nihil maxime optio assumenda nobis quibusdam reprehenderit sapiente magni iusto ducimus dolores vero animi temporibus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto magnam et vel nulla eveniet, nihil maxime optio assumenda nobis quibusdam reprehenderit sapiente magni iusto ducimus dolores vero animi temporibus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto magnam et vel nulla eveniet, nihil maxime optio assumenda nobis quibusdam reprehenderit sapiente magni iusto ducimus dolores vero animi temporibus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto magnam et vel nulla eveniet, nihil maxime optio assumenda nobis quibusdam reprehenderit sapiente magni iusto ducimus dolores vero animi temporibus.</p>
+                <h1>furniture</h1>
+                <p>there are many variation of passages of lorem ipsum available, but <br /> the majority have suffered alteration in some fo</p>
+                <button>contact us</button>
             </div>
         </>
     )

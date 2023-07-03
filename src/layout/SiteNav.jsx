@@ -1,6 +1,18 @@
 import { Link } from 'react-router-dom'
 import navbarLogo from "../images/logo.png"
+
 export default function SiteNav() {
+    var navBar = document.querySelector(".navbar");
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+            navBar.classList.add("sticky");
+        } else {
+            navBar.classList.remove("sticky");
+        }
+    }
+
+    window.onscroll = function () { scrollFunction() };
     return (
         <div className="navbar_container">
 
