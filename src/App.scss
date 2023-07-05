@@ -30,6 +30,10 @@ h5 {
     margin: auto;
 }
 
+button {
+    cursor: pointer;
+}
+
 .heading {
     margin-bottom: 100px;
 
@@ -71,6 +75,15 @@ h5 {
                     text-transform: uppercase;
                     color: black;
                     font-size: 1.2rem;
+                    transition: .3s;
+                    -webkit-transition: .3s;
+                    -moz-transition: .3s;
+                    -ms-transition: .3s;
+                    -o-transition: .3s;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
                 }
             }
         }
@@ -102,6 +115,7 @@ h5 {
 
 .landing_page {
     background-image: url("./images/banner-bg.png");
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,6 +198,7 @@ h5 {
 .about {
     background-color: $secondary-color;
     padding: 100px 0;
+    margin-bottom: 100px;
 
     .container {
         display: flex;
@@ -215,6 +230,96 @@ h5 {
     }
 }
 
+.furniture {
+    text-align: center;
+    margin-bottom: 100px;
+
+    .categories {
+        display: flex;
+        gap: 20px;
+
+        >div {
+            text-align: left;
+
+            .image {
+                margin-bottom: 30px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            h3 {
+                color: $secondary-color;
+                text-transform: uppercase;
+                font-weight: 800;
+            }
+
+            p {
+                font-size: 1.3rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.who_we_are {
+    background-image: url(../src/images/img-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffb507da;
+    }
+
+    .container {
+        position: relative;
+
+        .heading {
+            margin-bottom: 40px;
+
+            h2 {
+                color: white;
+            }
+
+            p {
+                text-transform: uppercase;
+                color: white;
+                font-size: 1rem;
+            }
+        }
+
+        p {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        button {
+            margin-top: 100px;
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            text-transform: uppercase;
+        }
+    }
+}
+
 
 @media (max-width: 1099px) {
     :root {
@@ -242,11 +347,21 @@ h5 {
     :root {
         font-size: 12px;
     }
+
+    .furniture {
+        .categories {
+            flex-direction: column;
+        }
+    }
 }
 
 @media (max-width: 550px) {
     :root {
         font-size: 10px;
+    }
+
+    .container {
+        max-width: 90%;
     }
 
     .navbar_container {
