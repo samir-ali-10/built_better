@@ -3,6 +3,7 @@ import icon_1 from "../images/icon-1.png"
 import icon_2 from "../images/icon-2.png"
 import icon_3 from "../images/icon-3.png"
 import icon_4 from "../images/icon-4.png"
+import aboutImage from "../images/img-1.png"
 
 
 export default function HomePage() {
@@ -52,6 +53,17 @@ export default function HomePage() {
                             )
                         }
                     </div>
+                </div>
+            </div>
+
+            <div className="about">
+                <div className="container">
+                    <div className="heading">
+                        <h2>about us</h2>
+                        <p>There are many variations of passages of lorem ipsum, There are many variations of passages of lorem ipsum, There are many variations of passages of lorem ipsum, There are many variations of passages of lorem ipsum</p>
+                        <button>read more</button>
+                    </div>
+                        <img src={aboutImage} alt="aboutImage" />
                 </div>
             </div>
         </>

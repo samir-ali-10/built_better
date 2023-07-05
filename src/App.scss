@@ -26,7 +26,7 @@ h5 {
 }
 
 .container {
-    max-width: 85%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -140,15 +140,17 @@ h5 {
 
 .services {
     margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
 
     .our_services {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
         gap: 20px;
 
         .service {
             margin-bottom: 20px;
+
             h3 {
                 font-size: 1.8rem;
                 font-weight: 500;
@@ -179,6 +181,40 @@ h5 {
     }
 }
 
+.about {
+    background-color: $secondary-color;
+    padding: 100px 0;
+
+    .container {
+        display: flex;
+        gap: 20px;
+
+        .heading {
+            color: white;
+
+            p {
+                color: white;
+                margin-top: 40px;
+                margin-bottom: 100px;
+            }
+
+            button {
+                background-color: black;
+                color: white;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+                padding: 15px 30px;
+            }
+        }
+    }
+}
+
 
 @media (max-width: 1099px) {
     :root {
@@ -194,6 +230,12 @@ h5 {
         }
     }
 
+    .about {
+        .container {
+            flex-direction: column;
+        }
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -205,6 +247,16 @@ h5 {
 @media (max-width: 550px) {
     :root {
         font-size: 10px;
+    }
+
+    .navbar_container {
+        .navbar {
+            .logo {
+                img {
+                    width: 150px;
+                }
+            }
+        }
     }
 
 
