@@ -6,11 +6,11 @@
 
 body {
     margin: 0;
-    height: 50000px;
 }
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 a {
@@ -157,6 +157,10 @@ button {
     margin-top: 100px;
     margin-bottom: 100px;
     text-align: center;
+    &.page {
+        margin-top: 0;
+        padding-top: 200px;
+    }
 
     .our_services {
         display: grid;
@@ -200,6 +204,9 @@ button {
     background-color: $secondary-color;
     padding: 100px 0;
     margin-bottom: 100px;
+    &.page {
+        margin-bottom: 0;
+    }
 
     .container {
         display: flex;
@@ -234,6 +241,9 @@ button {
 .furniture {
     text-align: center;
     margin-bottom: 100px;
+    &.page {
+        padding-top: 200px;
+    }
 
     .categories {
         display: flex;
@@ -488,6 +498,86 @@ button {
     }
 }
 
+.infos {
+    background-color: $background-color;
+    color: white;
+    padding: 100px 0;
+    .information {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+        gap: 20px;
+        justify-content: space-between;
+        .special_card {
+            h2 {
+                font-size: 2.7rem;
+                margin-bottom: 40px;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+        }
+        .card {
+            h2 {
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+            ul {
+                li {
+                    a {
+                        color: white;
+                        text-transform: capitalize;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+    form {
+        text-align: right;
+        display: flex;
+        justify-content: end;
+        input:not(input[type = "submit"]) {
+            width: 35%;
+            padding: 10px 0;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid white;
+            &::placeholder {
+                font-size: 1.3rem;
+                color: #777;
+            }
+        }
+        input[type = "submit"] {
+            background-color: transparent;
+            font-size: 1.3rem;
+            color: white;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    .socials {
+        a {
+            margin-right: 5px;
+        }
+    }
+    .copyright {
+        p {
+            text-transform: capitalize;
+            font-size: 1.3rem;
+        }
+    }
+}
+
 
 @media (max-width: 1099px) {
     :root {
@@ -526,6 +616,20 @@ button {
         .feedbacks {
             >div {
                 width: 100%;
+            }
+        }
+    }
+
+    .contact_us {
+        text-align: center;
+        .message_us {
+            flex-direction: column;
+            > div {
+                width: 100% !important;
+            }
+            form {
+                width: 100% !important;
+                margin-bottom: 20px;
             }
         }
     }

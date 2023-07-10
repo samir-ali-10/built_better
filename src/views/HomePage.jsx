@@ -13,7 +13,6 @@ import feedbackOne from "../images/img-7.png"
 import feedbackTwo from "../images/img-8.png"
 import quoteIcon from "../images/quote-icon.png"
 
-
 export default function HomePage() {
 
     let services = [
@@ -184,6 +183,8 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+
+
         </>
     )
 }
