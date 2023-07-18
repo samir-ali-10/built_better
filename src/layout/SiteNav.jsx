@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import navbarLogo from "../images/logo.png"
+import searchIcon from "../images/search-icon.png"
+
 
 export default function SiteNav() {
     // var navBar = document.querySelector(".navbar");
@@ -41,7 +43,7 @@ export default function SiteNav() {
                 <div className="info">
                     <a href="/">Call Us: +01005212460</a>
                     <div className="log">
-                        <p>p</p>
+                        <img src={searchIcon} alt="searchIcon" />
                         <a href="/">login</a>
                     </div>
                 </div>
